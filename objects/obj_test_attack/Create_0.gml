@@ -1,0 +1,1 @@
+global.border_width = 200;

@@ -1,0 +1,1 @@
+draw_sprite_part(sprite_index, image_index, 0, sprite_get_height(sprite_index) - line, sprite_get_width(sprite_index), line, x, y + sprite_get_height(sprite_index) - line);

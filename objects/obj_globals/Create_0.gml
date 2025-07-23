@@ -1,0 +1,22 @@
+global.camerax = 0;
+global.cameray = 0;
+global.msg = [];
+global.choice_options = [];
+global.choice_msg = [];
+global.debug = true;
+global.prev_room = noone;
+global.font_big_numbers = font_add_sprite_ext(spr_big_numbers, "0123456789", 20, 0);
+global.font_damage_numbers = font_add_sprite_ext(spr_battle_damage, "0123456789", 20, 0);
+global.font_damage_numbers_gold = font_add_sprite_ext(spr_numbersfontbig_gold, "0123456789+-%/", 20, 0);
+global.max_player_health = 20;
+global.player_health = 10;
+global.encounter = obj_encounter;
+global.encounter_bodies = [];
+global.name = "Chara";
+global.lvl = 1;
+global.gold = 0;
+global.items = [obj_item];
+shake_strength = 5;
+shake_timer = 120;
+
+window_set_size(640, 480);

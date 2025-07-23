@@ -1,0 +1,1 @@
+cur_enemy = global.encounter_bodies[global.btl_vertical_selection]

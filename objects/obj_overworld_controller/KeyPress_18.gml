@@ -1,0 +1,1 @@
+scr_damage_player(round(random_range(0, 15)));

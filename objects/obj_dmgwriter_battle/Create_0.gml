@@ -1,0 +1,9 @@
+vspeed = -4;
+gravity = 0.5;
+gravity_direction = 270;
+depth = -9999;
+dmg = 0;
+dmg_to = 100;
+hp = 100;
+stretch = 1;
+size = 1;
