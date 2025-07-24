@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_knight_test_event",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_battle_bullet",
+  "eventList":[],
   "managed":true,
-  "name":"obj_knight_test_event",
+  "name":"obj_battle_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Events",
-    "path":"folders/Objects/Events.yy",
+    "name":"Bullet Paterns",
+    "path":"folders/Objects/Battle/Bullet Paterns.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_event",
-    "path":"sprites/spr_event/spr_event.yy",
+    "name":"spr_32x_circle",
+    "path":"sprites/spr_32x_circle/spr_32x_circle.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
