@@ -1,2 +1,1 @@
-scr_text("#EC1* Holy /R@SSHIT@W/W This text is\n  all outa wack");
-scr_text("#EC2* Expression TWOOOOO!!!");
+instance_create_depth(0, 0, 0, obj_dtr_battle_controller);

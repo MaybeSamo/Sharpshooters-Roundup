@@ -42,9 +42,11 @@ if (!place_meeting(x, y + yspd, obj_solid)) {
     if (yspd != 0) moving = true;
 }
 
-image_speed = moving ? (key_run ? 1 : 0.8) : 0;
+if (global.is_in_overworld) {
+    image_speed = moving ? (key_run ? 1 : 0.8) : 0;   
+}
 
-if (!moving) {
+if (!moving and global.is_in_overworld) {
     image_index = 0;
 }
 

@@ -14,3 +14,4 @@ face_sprites = {
 trail_length = 60;
 trail = []
 global.can_move = true;
+global.is_in_overworld = true;
