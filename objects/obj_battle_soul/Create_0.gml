@@ -5,6 +5,8 @@
 image_speed = 0;
 image_blend = c_red;
 global.soul_mode = SOUL_RED;
+graze_alpha = 0;
+grazing = false;
 
 spd = 2;
 depth = -99999;

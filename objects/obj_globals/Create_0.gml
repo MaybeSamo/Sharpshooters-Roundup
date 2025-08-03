@@ -11,12 +11,19 @@ global.font_damage_numbers_gold = font_add_sprite_ext(spr_numbersfontbig_gold, "
 global.dtr_small_numbers = font_add_sprite_ext(spr_small_numbers, "0123456789", 10, 1);
 global.max_player_health = 20;
 global.player_health = 10;
-global.encounter = obj_encounter;
+global.encounter = obj_encounter_asgore;
 global.encounter_bodies = [];
 global.name = "Chara";
 global.lvl = 1;
 global.gold = 0;
 global.items = [obj_item];
+global.party = [
+    { name: "Kris", hp: 120 },
+    { name: "Susie", hp: 120 },
+    { name: "Ralsie", hp: 120 },
+];
+global.box_pos = "top";
+global.plot = 0;
 shake_strength = 5;
 shake_timer = 120;
 

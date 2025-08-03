@@ -23,7 +23,7 @@
   ],
   "name":"spr_kris_attack_ready",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Deltarune Battle",
     "path":"folders/Sprites/Deltarune Battle.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":31,
+    "xorigin":22,
     "yorigin":25,
   },
   "swatchColours":null,

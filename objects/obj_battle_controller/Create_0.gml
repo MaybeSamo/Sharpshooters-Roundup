@@ -16,6 +16,8 @@
 #macro ITEM_BT 2
 #macro MERCY_BT 3
 
+global.camerax = 0;
+global.cameray = 0;
 global.border_width = 575;
 global.border_height = 130;
 global.btl_selected_button = 0;
@@ -26,6 +28,8 @@ global.btl_first_turn_done = false;
 global.attack_timer = 0;
 global.act_selected = 0;
 global.selected_monster = 0;
+global.tp = 0;
+global.tp_to = 0;
 depth = -9;
 
 instance_create_depth(0, 0, 0, obj_battle_box);

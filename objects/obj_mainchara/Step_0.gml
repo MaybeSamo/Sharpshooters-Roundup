@@ -19,8 +19,13 @@ if (key_run) {
 spd = clamp(spd, walk_spd, run_spd);
 
 if (global.can_move) {
-    xspd = (key_right - key_left) * spd;
-    yspd = (key_down - key_up) * spd;   
+    if (global.sliding) {
+        xspd = (key_right - key_left) * spd;
+        yspd = 0;
+    } else {
+        xspd = (key_right - key_left) * spd;
+        yspd = (key_down - key_up) * spd;
+    }
 } else {
     xspd = 0;
     yspd = 0;
@@ -42,7 +47,7 @@ if (!place_meeting(x, y + yspd, obj_solid)) {
     if (yspd != 0) moving = true;
 }
 
-if (global.is_in_overworld) {
+if (global.is_in_overworld and !global.sliding) {
     image_speed = moving ? (key_run ? 1 : 0.8) : 0;   
 }
 
@@ -55,5 +60,19 @@ if (moving) {
 
     if (array_length(trail) > trail_length) {
         array_pop(trail); 
+    }
+}
+
+if (global.sliding) {
+    y += 7;
+    sprite_index = spr_krisd_slide;
+    image_speed = 1;
+}
+
+with (obj_actor) {
+    if (char_name == "mc") {
+        obj_mainchara.x = x;
+        obj_mainchara.y = y;
+        obj_mainchara.sprite_index = sprite_index;
     }
 }

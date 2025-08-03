@@ -2,12 +2,13 @@
 #macro DBS_INTRO_SLASH 1
 #macro DBS_SELECT 2
 #macro DBS_SELECT_MONSTER 3
+#macro DBS_FIGHT_TIMING 4
 
 obj_mainchara.depth = -9999999999999;
-bg = instance_create_depth(0, 0, obj_mainchara.depth + 1, obj_dtr_battle_background);
+use_background = false;
+bg = instance_create_depth(0, 0, obj_mainchara.depth + 1, obj_dtr_battle_background); 
+soul = instance_create_depth(100, 100, bg.depth - 99, obj_dtr_battle_soul);
 enemy_obj = obj_dtr_battle_enemy;
-enemy_obj.depth = obj_mainchara.depth;
-enemy_obj.selected = false;
 bg_alpha = 0;
 timer = 0;
 party_slashed_intro = false;

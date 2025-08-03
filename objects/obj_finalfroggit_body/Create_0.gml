@@ -7,4 +7,4 @@ yy = 0;
 pause = 0;
 offx = 60;
 offy = 20;
-
+depth = obj_battle_box.depth + 1;

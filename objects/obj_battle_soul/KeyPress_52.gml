@@ -1,0 +1,1 @@
+i_create(x, y, obj_graze);

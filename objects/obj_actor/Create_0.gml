@@ -1,7 +1,7 @@
 image_speed = 0;
 facing = 0;
 walking = false;
-walking_image_speed = 1;
+walking_image_speed = 0;
 walk_speed = 1;
 dir = "r"
 dir_sprite = false;

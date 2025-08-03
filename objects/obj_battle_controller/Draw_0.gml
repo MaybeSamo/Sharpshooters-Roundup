@@ -2,12 +2,26 @@ if (fade_alpha >= 0) {
     fade_alpha -= 0.1;
 }
 
+global.tp += (global.tp_to - global.tp) / 6;
+
 var key_left = keyboard_check_pressed(vk_left);
 var key_right = keyboard_check_pressed(vk_right);
 var key_down = keyboard_check_pressed(vk_down);
 var key_up = keyboard_check_pressed(vk_up);
 var key_accept = keyboard_check_pressed(ord("Z"));
 var key_return = keyboard_check_pressed(ord("X"));
+
+//TP BAR\
+var bar_width = clamp(global.tp, 0, 100);
+var fill_width = 35 + (bar_width);
+draw_set_font(fnt_main_bigger);
+draw_set_color(c_white);
+draw_text(30, 180, string(round(global.tp)) + "%");
+draw_set_font(fnt_mars_needs_bigger)
+draw_text(14, 60, "T\nP");
+draw_rectangle_color(35, 180, 50, 60, c_red, c_red, c_red, c_red, false);
+draw_rectangle_color(35, 180 - ((global.tp / 100) * (180 - 60)), 50, 180, c_yellow, c_yellow, c_yellow, c_yellow, false);
+draw_rectangle_color(35, 180, 50, 60, c_black, c_black, c_black, c_black, true);
 
 draw_set_font(fnt_mars_needs_bigger);
 draw_set_color(c_white);
@@ -94,7 +108,7 @@ switch (global.battle_state) {
                        global.battle_state = BS_SELECT_ITEM;         
                     }
                     break;
-                case MERCY_BT: global.battle_state = BS_SELECT_MONSTER; break;
+                case MERCY_BT: global.battle_state = BS_MERCY_SELECT; break;
             }
             play_sound(snd_select);
             delay();
@@ -185,7 +199,7 @@ switch (global.battle_state) {
         battle_writer.text[0] = "";
         soul.x = 60 + (global.btl_horizontal_selection * 240);
         soul.y = 283 + (global.btl_vertical_selection * 33);
-        var _amount_of_acts = array_length(global.encounter.acts[global.btl_vertical_selection]);
+        var _amount_of_acts = array_length(global.encounter.acts[global.selected_monster]);
         if (key_right) {
             global.btl_horizontal_selection += 1;
         } else if (key_left) {
@@ -198,8 +212,8 @@ switch (global.battle_state) {
         }
         if (key_accept) {
             global.battle_state = BS_ACT_BOX_DIALOGUE;
-            if (global.encounter.acts[1][global.act_selected][1] > 0) {
-                global.encounter.mercy[global.selected_monster] += global.encounter.acts[1][global.act_selected][1];
+            if (global.encounter.acts[global.selected_monster][global.act_selected][1] > 0) {
+                global.encounter.mercy[global.selected_monster] += global.encounter.acts[global.selected_monster][global.act_selected][1];
                 var _mercy = instance_create_depth(global.encounter_bodies[global.selected_monster].x, global.encounter_bodies[global.selected_monster].y, -9999, obj_dmgwriter);
                 _mercy.gold = true;
                 _mercy.damage = global.encounter.acts[global.selected_monster][global.act_selected][1];
@@ -270,7 +284,7 @@ switch (global.battle_state) {
         }
         soul.visible = true;
         soul.y = 283 + (global.btl_vertical_selection * 33);
-        battle_writer.text = ["  * Spare"];
+        battle_writer.text = ["  * Spare\n  * Defend"];
         
         if (key_down) {
             global.btl_vertical_selection += 1;
@@ -280,7 +294,8 @@ switch (global.battle_state) {
     
         if (key_accept) {
             if (global.btl_vertical_selection == 1) {
-                global.battle_state = BS_FLEEING;
+                global.tp_to += 16;
+                global.battle_state = BS_ATTACK;
             }
         }
         
@@ -311,7 +326,6 @@ switch (global.battle_state) {
         if (key_accept) {
             global.battle_state = BS_ITEM_USE;
         }
-    
         soul.visible = true;
     
         var start_index = max(0, min(global.btl_vertical_selection - 1, array_length(global.items) - 3));
@@ -365,3 +379,4 @@ switch (global.battle_state) {
 draw_set_alpha(fade_alpha);
 draw_rectangle_color(0 + global.camerax, 0 + global.cameray, 640 + global.camerax, 480 + global.cameray, c_black, c_black, c_black, c_black, false);
 draw_set_alpha(1);
+show_debug_message(global.camerax);

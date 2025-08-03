@@ -13,7 +13,7 @@ draw_set_color(c_white);
 
 var shaking = false;
 var wave = false;
-var sound_char_played = false;
+var sound_char_played = true;
 
 siner += 1;
 
@@ -25,23 +25,44 @@ if (!use_box) {
     _draw_x = x;
     _draw_y = y;
 } else if (use_box) {
-    if (current_expression == "") {
-        _draw_x = global.camerax + 30;
-    } else if (current_expression != "") {
-        _draw_x = global.camerax + 80;
+    if (global.box_pos == "bottom") {
+        if (current_expression == "") {
+            _draw_x = global.camerax + 30;
+        } else {
+            _draw_x = global.camerax + 80;
+        }
+        _draw_y = global.cameray + 165;
+    } else if (global.box_pos == "top") {
+        if (current_expression == "") {
+            _draw_x = global.camerax + 30;
+        } else {
+            _draw_x = global.camerax + 80;
+        }
+        _draw_y = global.cameray + 20; // adjusted for top position
     }
-    _draw_y = global.cameray + 165;
 }
 
-if use_box {
-    var face_sprite = scr_get_expression(current_expression);
-    show_debug_message(face_sprite);
-    show_debug_message(current_expression);
-    if (box_pos == "bottom") {
-        draw_sprite(spr_textbox, 0, global.camerax + 160, global.cameray + 192); 
+if (use_box) {
+    var expr_data = scr_get_expression(current_expression);
+    var face_sprite = expr_data.sprite;
+
+    if (expr_data.sound != undefined) {
+        snd = expr_data.sound;
+    } else {
+        snd = snd_generic_text;
     }
-    if (face_sprite != -1) {
-        draw_sprite(scr_get_expression(current_expression), 0, global.camerax + 50, global.cameray + 192);
+
+    // Draw face sprite
+    if (global.box_pos == "bottom") {
+        draw_sprite(spr_textbox, 0, global.camerax + 160, global.cameray + 192); 
+        if (face_sprite != -1) {
+            draw_sprite(face_sprite, 0, global.camerax + 50, global.cameray + 192);
+        }
+    } else if (global.box_pos == "top") {
+        draw_sprite(spr_textbox, 0, global.camerax + 160, global.cameray + 47);
+        if (face_sprite != -1) {
+            draw_sprite(face_sprite, 0, global.camerax + 50, global.cameray + 47);
+        }
     }
 }
 
@@ -128,16 +149,25 @@ while (_i <= string_length(_text) && _char_count < draw_char) {
 
     if (_char == "\n") {
         if (use_box) {
-            if (current_expression == "") {
-               _draw_x = global.camerax + 30;      
-            } else if (current_expression != "") { 
-               _draw_x = global.camerax + 80;    
+            if (global.box_pos == "top") {
+                if (current_expression == "") {
+                    _draw_x = global.camerax + 30;
+                } else {
+                    _draw_x = global.camerax + 80;
+                }
+            } else {
+                if (current_expression == "") {
+                    _draw_x = global.camerax + 30;
+                } else {
+                    _draw_x = global.camerax + 80;
+                }
             }
-             
         }
-        
-        if (!use_box)
+
+        if (!use_box) {
             _draw_x = global.camerax + x;
+        }
+
         _draw_y += string_height("A") + line_sep;
     } else {
         var _dx = _draw_x;
@@ -184,17 +214,21 @@ while (_i <= string_length(_text)) {
     _i += 1;
 }
 
-if (!delayed && draw_char < total_visible_chars and !paused) {
+if (!delayed && draw_char < total_visible_chars && !paused) {
     if (sound_char_played) {
         if (snd_count < snd_delay) {
             snd_count++;
         } else {
             snd_count = 0;
-            audio_play_sound(snd, 0, false);
+            if (array_length(random_snd) == 0) {
+                audio_play_sound(snd, 0, false);
+            } else {
+                audio_play_sound(random_snd[irandom_range(0, array_length(random_snd) - 1)], 0, false);
+            }
         }
     }
 
-    if (skip_key and can_skip) {
+    if (skip_key && can_skip) {
         draw_char = total_visible_chars;
     } else {
         draw_char += text_speed;
@@ -203,7 +237,7 @@ if (!delayed && draw_char < total_visible_chars and !paused) {
 
 if (draw_char >= total_visible_chars && !delayed) {
     done = true;
-    if (accept_key and can_accept) {
+    if (accept_key && can_accept) {
         if (page + 1 == _pages) {
             global.msg = [];
             instance_destroy();
@@ -214,5 +248,3 @@ if (draw_char >= total_visible_chars && !delayed) {
         }
     }
 }
-
-show_debug_message(current_expression);

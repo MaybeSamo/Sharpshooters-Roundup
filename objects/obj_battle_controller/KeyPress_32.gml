@@ -1,1 +1,1 @@
-scr_damage_player(10);
+global.tp_to += 12;

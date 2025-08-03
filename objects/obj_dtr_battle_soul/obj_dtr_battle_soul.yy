@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_dtr_battle_soul",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_dtr_battle_soul",
   "overriddenProperties":[],
@@ -27,7 +29,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"spr_heartsmall",
+    "path":"sprites/spr_heartsmall/spr_heartsmall.yy",
+  },
+  "spriteMaskId":{
+    "name":"spr_heartsmall",
+    "path":"sprites/spr_heartsmall/spr_heartsmall.yy",
+  },
   "visible":true,
 }

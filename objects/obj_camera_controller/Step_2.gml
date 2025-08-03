@@ -20,4 +20,9 @@ if (shake_timer > 0) {
     cam_y += shake_y;
 }
 
+if (room == room_battle) {
+    cam_x = 0;
+    cam_y = 0;
+}
+
 camera_set_view_pos(view_camera[0], cam_x, cam_y);

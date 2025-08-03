@@ -1,6 +1,6 @@
 // Define the step size for the linear transition
 var step_width = 20; // Adjust this for faster/slower changes
-var step_height = 20;
+var step_height = 7;
 
 // Handle width adjustment
 if (current_width < global.border_width) {

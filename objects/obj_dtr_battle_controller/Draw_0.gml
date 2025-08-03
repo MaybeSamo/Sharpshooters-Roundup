@@ -1,6 +1,10 @@
 timer += 1;
 global.can_move = false;
 
+if (!use_background) {
+    bg.visible = false;
+}
+
 var key_left = keyboard_check_pressed(vk_left);
 var key_right = keyboard_check_pressed(vk_right);
 var key_down = keyboard_check_pressed(vk_down);
@@ -17,6 +21,7 @@ if (bg._bg_alpha < 1) {
 
 switch (global.battle_state) {
     case DBS_ENTERING_BATTLE:
+        soul.visible = false;
         if (timer % 2 == 0) {
             var _s = instance_create_depth(obj_mainchara.x, obj_mainchara.y, obj_mainchara.depth, obj_dtr_battle_enter_sillouhete);
             _s.sprite_index = obj_mainchara.sprite_index;
@@ -50,12 +55,12 @@ switch (global.battle_state) {
         // Distance to target
         var _dist = point_distance(x, y, _targetx, _targety);
         
-        if (_dist < 6) {
+        if (_dist < 12) {
             x = _targetx;
             y = _targety;
             speed = 0;
         } else {
-            move_towards_point(_targetx, _targety, 6);
+            move_towards_point(_targetx, _targety, 12);
         }
         }
         break;
@@ -67,13 +72,15 @@ switch (global.battle_state) {
         }
         break;
     case DBS_SELECT:
+        obj_dtr_battle_enemy.selected = false;
+        soul.visible = false;
         if (!instance_exists(obj_writer)) {
-            battle_writer = instance_create_depth(25, 185, -9999999, obj_writer);
-            battle_writer.text = ["* /YTest enemy /Waproaches you!"];
+            battle_writer = instance_create_depth(camerax() + 25, cameray() + 185, -9999999, obj_writer);
             battle_writer.can_accept = false;
         }
+        battle_writer.text = ["* /YTest enemy /Waproaches you!"];
         if (!instance_exists(obj_dtr_battle_char_info_drawer)) {
-            party_member_info = instance_create_depth(120, 150, -9999999999999, obj_dtr_battle_char_info_drawer);
+            party_member_info = instance_create_depth(camerax() + 120, cameray() + 150, -9999999999999, obj_dtr_battle_char_info_drawer);
         }
     
         if (obj_dtr_battle_char_info_drawer.selected_button == 0 and key_accept) {
@@ -85,9 +92,23 @@ switch (global.battle_state) {
         ui_y_to = 0;
         break;
     case DBS_SELECT_MONSTER:
+        obj_dtr_battle_enemy.selected = true;
+        soul.visible = true;
+        soul.x = camerax() + 30;
+        soul.y = cameray() + 193;
+        if (key_return) {
+            global.battle_state = DBS_SELECT;
+        }
+        if (key_accept) {
+            global.battle_state = DBS_FIGHT_TIMING;
+        }
         battle_writer.text = ["  Test Enemy"];
         enemy_obj.selected = true;
         break;
+    case DBS_FIGHT_TIMING:
+        obj_mainchara.sprite_index = spr_kris_attack_ready;
+        soul.visible = false;
+        battle_writer.text = [""];
 }
 draw_set_color(c_black);
 draw_rectangle(0, 480 + ui_y, 640, 158 + ui_y, false);
