@@ -240,6 +240,7 @@ if (draw_char >= total_visible_chars && !delayed) {
     if (accept_key && can_accept) {
         if (page + 1 == _pages) {
             global.msg = [];
+            global.can_move = true;
             instance_destroy();
         } else {
             done = false;

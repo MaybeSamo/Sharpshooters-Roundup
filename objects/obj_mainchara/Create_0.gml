@@ -5,6 +5,7 @@ run_spd = 4;
 spd = 2;
 image_speed = 0;
 running = false;
+enter_climb = false;
 face_sprites = {
     up: spr_krisu_dark,
     down: spr_krisd_dark,

@@ -3,6 +3,7 @@ var key_right = keyboard_check(vk_right);
 var key_up = keyboard_check(vk_up);
 var key_down = keyboard_check(vk_down);
 var key_run = keyboard_check(ord("X"));
+var key_interact = keyboard_check(ord("Z"));
 
 var moving = false;
 
@@ -75,4 +76,36 @@ with (obj_actor) {
         obj_mainchara.y = y;
         obj_mainchara.sprite_index = sprite_index;
     }
+}
+
+var climb_mount = instance_place(x, y, obj_climb_mount);
+
+if (climb_mount != noone and key_interact) {
+    global.can_move = false;
+    scr_move_towards_point(self, obj_climb_mount.x, obj_climb_mount.y, 3);
+    enter_climb = true;
+}
+
+if (climb_mount != noone and enter_climb) {
+    if (x == climb_mount.x and y == climb_mount.y) {
+        i_create(x, y, obj_mainchara_climber);
+        enter_climb = false;
+    }
+}
+
+
+if (instance_exists(obj_mainchara_climber)) {
+    global.can_move = false;
+    x = obj_mainchara_climber.x;
+    y = obj_mainchara_climber.y;
+}
+
+if (y <= cameray() + 120) {
+    global.box_pos = "bottom";
+} else {
+    global.box_pos = "top";
+}
+
+if (i_ex(obj_writer)) {
+    global.can_move = false;
 }

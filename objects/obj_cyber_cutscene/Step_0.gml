@@ -90,9 +90,27 @@ if (con == 2) {
     con = 3;
 }
 
-if (con == 3 and !instance_exists(obj_cutscene)) {
-    instance_destroy();
-    obj_mainchara.visible = true;
-    global.can_move = true;
+if (con == 3 and i_ex(obj_encounter_anim)) {
+    con = 4;
+}
+
+if (con == 4 and !i_ex(obj_encounter_anim)) {
+    c_set_global("camera_following", "true");
+    c_sprite_index(spr_queen_chair_swish_wine);
+    c_msgpush("* Oh Damn You Actually Won Lmao.");
+    c_msgpush("* Welp I Guess You Can Go Now.");
+    c_wait_talk();
+    c_set_speed(0, 3);
+    c_sprite_index(spr_queen_chair_ohoho);
+    c_wait(60);
+    c_destroy_actors();
+    c_end_cutscene();
+    con = 5;
+}
+
+if (con == 5 and !i_ex(obj_cutscene)) {
     global.camera_following = true;
+    instance_destroy();
+    global.can_move = true;
+    obj_mainchara.visible = true;
 }

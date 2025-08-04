@@ -1,1 +1,1 @@
-global.tp_to += 12;
+scr_room_goto_fade(global.prev_room, 0.1);

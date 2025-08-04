@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test_cutscene",
+  "%Name":"obj_mainchara_climber",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_test_cutscene",
+  "name":"obj_mainchara_climber",
   "overriddenProperties":[],
   "parent":{
-    "name":"Events",
-    "path":"folders/Objects/Events.yy",
+    "name":"Overworld",
+    "path":"folders/Objects/Overworld.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,9 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_event",
-    "path":"sprites/spr_event/spr_event.yy",
+    "name":"spr_kris_climb_new",
+    "path":"sprites/spr_kris_climb_new/spr_kris_climb_new.yy",
   },
-  "spriteMaskId":null,
-  "visible":false,
+  "spriteMaskId":{
+    "name":"spr_mainchara_mask",
+    "path":"sprites/spr_mainchara_mask/spr_mainchara_mask.yy",
+  },
+  "visible":true,
 }

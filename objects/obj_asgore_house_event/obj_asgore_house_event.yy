@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test_cutscene",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_asgore_house_event",
+  "eventList":[],
   "managed":true,
-  "name":"obj_test_cutscene",
+  "name":"obj_asgore_house_event",
   "overriddenProperties":[],
   "parent":{
     "name":"Events",

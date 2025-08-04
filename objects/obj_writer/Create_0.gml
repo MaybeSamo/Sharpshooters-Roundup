@@ -20,6 +20,7 @@ typing = true;
 line_sep = 0;
 siner = 0;
 current_expression = "";
+move_on_destroy = true;
 reset = function() {
     draw_char = 0;
     page = 0;
