@@ -80,14 +80,14 @@ with (obj_actor) {
 
 var climb_mount = instance_place(x, y, obj_climb_mount);
 
-if (climb_mount != noone and key_interact) {
+if (climb_mount != noone and key_interact and !enter_climb) {
     global.can_move = false;
     scr_move_towards_point(self, obj_climb_mount.x, obj_climb_mount.y, 3);
     enter_climb = true;
 }
 
 if (climb_mount != noone and enter_climb) {
-    if (x == climb_mount.x and y == climb_mount.y) {
+    if (x == climb_mount.x and y == climb_mount.y and !i_ex(obj_mainchara_climber)) {
         i_create(x, y, obj_mainchara_climber);
         enter_climb = false;
     }

@@ -32,6 +32,7 @@ if (timer % 10 == 0) {
     _l.depth = depth - 1;
 }
 
+//They call me the magic number man
 draw_set_color(c_black);
 draw_rectangle(x - 8.5, y - 10.65, x + 91.5, y + 7, false);
 draw_set_color(c_white);

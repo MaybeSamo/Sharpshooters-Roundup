@@ -1,1 +1,1 @@
-text[0] = "* Fireplace text.";
+text[0] = "*#E0 Fireplace text.";

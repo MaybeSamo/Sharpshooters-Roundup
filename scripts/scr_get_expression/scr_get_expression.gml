@@ -12,10 +12,15 @@ function scr_get_expression(argument0) {
                 sprite: spr_face_n_matome_14,
                 sound: snd_txtnoe,
             }
+        case "0":
+            return {
+                sprite: noone,
+                sound: snd_generic_text,
+            }
         default:
             return {
                 sprite: -1,
-                sound: snd_nosound
+                sound: snd_generic_text
             };
     }
 }

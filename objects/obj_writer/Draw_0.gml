@@ -140,8 +140,9 @@ while (_i <= string_length(_text) && _char_count < draw_char) {
         
             // 🔧 Normalize the expression name
             _exp_name = string_upper(string_trim(_exp_name));
-        
-            current_expression = _exp_name;
+            if (_exp_name != "0") {
+                current_expression = _exp_name;
+            }
             _i = _j;
             continue;
         }

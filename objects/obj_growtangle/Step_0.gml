@@ -10,6 +10,7 @@ if (image_xscale == 1) {
 }
 
 var _i = instance_create_depth(x, y, depth + 1, obj_growtangle_sillouhete);
-_i.image_xscale = image_xscale - 0.1;
-_i.image_yscale = image_yscale - 0.1;
-_i.image_angle = image_angle - 10;
+_i.image_xscale = image_xscale;
+_i.image_yscale = image_yscale;
+_i.image_angle = image_angle;
+_i.depth = depth - 1;

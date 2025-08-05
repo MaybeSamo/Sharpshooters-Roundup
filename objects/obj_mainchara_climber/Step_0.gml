@@ -58,5 +58,3 @@ if (place_meeting(x, y, obj_climbable) or !exited_mount) {
     obj_mainchara.visible = true;
     global.can_move = true;
 }
-
-show_debug_message("Climb timer: " + string(climb_timer));
