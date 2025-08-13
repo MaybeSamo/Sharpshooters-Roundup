@@ -253,3 +253,5 @@ if (draw_char >= total_visible_chars && !delayed) {
         }
     }
 }
+
+show_debug_message("Visible: " + string(visible));
