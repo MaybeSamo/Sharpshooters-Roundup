@@ -1,2 +1,2 @@
-x = obj_battle_soul.x;
-y = obj_battle_soul.y;
+x = obj_dtr_battle_soul.x;
+y = obj_dtr_battle_soul.y;

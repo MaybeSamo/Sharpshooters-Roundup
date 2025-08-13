@@ -357,7 +357,7 @@ switch (global.battle_state) {
         if (instance_exists(obj_writer)) {
             battle_writer.visible = true;
             battle_writer.typing = true;
-            battle_writer.can_accept = true;   
+            battle_writer.can_accept = true;
         } else {
             global.battle_state = BS_ATTACK;
         }
@@ -379,4 +379,3 @@ switch (global.battle_state) {
 draw_set_alpha(fade_alpha);
 draw_rectangle_color(0 + global.camerax, 0 + global.cameray, 640 + global.camerax, 480 + global.cameray, c_black, c_black, c_black, c_black, false);
 draw_set_alpha(1);
-show_debug_message(global.camerax);

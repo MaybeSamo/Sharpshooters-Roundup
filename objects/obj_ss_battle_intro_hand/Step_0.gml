@@ -1,0 +1,1 @@
+image_xscale += (xscale_to - image_xscale) / 3;

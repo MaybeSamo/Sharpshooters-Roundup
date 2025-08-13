@@ -1,0 +1,1 @@
+global.plot = 1;

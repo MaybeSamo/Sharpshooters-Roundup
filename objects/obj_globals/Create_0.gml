@@ -3,7 +3,7 @@ global.cameray = 0;
 global.msg = [];
 global.choice_options = [];
 global.choice_msg = [];
-global.debug = false;
+global.debug = true;
 global.prev_room = noone;
 global.font_big_numbers = font_add_sprite_ext(spr_big_numbers, "0123456789", 20, 0);
 global.font_damage_numbers = font_add_sprite_ext(spr_battle_damage, "0123456789", 20, 0);
@@ -22,8 +22,12 @@ global.party = [
     { name: "Susie", hp: 120 },
     { name: "Ralsie", hp: 120 },
 ];
+global.party_battle_actors = [obj_battle_actor_kris, obj_battle_actor_susie];
 global.box_pos = "top";
 global.plot = 0;
+global.battle_ui = [];
+global.current_enemy = [obj_sharpshooter_enemy];
+global.party_member_actions = 0;
 shake_strength = 5;
 shake_timer = 120;
 

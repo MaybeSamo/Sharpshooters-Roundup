@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Deltarune Battle",
-    "path":"folders/Sprites/Deltarune Battle.yy",
+    "name":"Deltarune",
+    "path":"folders/Sprites/Deltarune.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

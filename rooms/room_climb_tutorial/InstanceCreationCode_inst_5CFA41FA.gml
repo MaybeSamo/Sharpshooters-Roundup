@@ -1,1 +1,0 @@
-text[0] = "* WARNING:^1 Be careful while\n  climbing.";

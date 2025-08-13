@@ -66,7 +66,8 @@ if (gold) {
 } else {
     draw_set_font(global.font_big_numbers);   
 }
-draw_set_color(c_white);
+draw_set_color(color);
 draw_set_alpha(1 - kill);
 draw_text_transformed(x, y, string(damage) + (gold == true ? "%" : ""), ((2 - stretch) / 2) * size, ((stretch + kill) / 2) * size, 0);
 draw_set_alpha(1);
+draw_set_color(c_white);

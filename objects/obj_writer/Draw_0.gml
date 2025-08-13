@@ -1,3 +1,6 @@
+draw_set_alpha(1);
+
+
 var accept_key = keyboard_check_pressed(ord("Z"));
 var skip_key = keyboard_check_pressed(ord("X"));
 
@@ -221,10 +224,10 @@ if (!delayed && draw_char < total_visible_chars && !paused) {
             snd_count++;
         } else {
             snd_count = 0;
-            if (array_length(random_snd) == 0) {
+            if (!tenna_speak) {
                 audio_play_sound(snd, 0, false);
             } else {
-                audio_play_sound(random_snd[irandom_range(0, array_length(random_snd) - 1)], 0, false);
+                audio_play_sound(random_snd[irandom_range(0, array_length(random_snd) - 1)], 0, false, 0.5);
             }
         }
     }

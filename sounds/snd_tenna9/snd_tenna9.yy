@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_tenna9",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.092857145,
+  "name":"snd_tenna9",
+  "parent":{
+    "name":"Tenna",
+    "path":"folders/Sounds/Tenna.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_tenna9.ogg",
+  "type":0,
+  "volume":1.0,
+}

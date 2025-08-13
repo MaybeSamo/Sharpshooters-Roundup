@@ -21,3 +21,6 @@ siner_y_amp = 0;
 siner_x_freq = 0;
 siner_y_freq = 0;
 use_sillouhete = false;
+x_to = x;
+y_to = y;
+use_tween = false;

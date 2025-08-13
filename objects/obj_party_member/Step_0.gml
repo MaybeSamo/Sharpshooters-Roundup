@@ -25,7 +25,7 @@ if (array_length(obj_mainchara.trail) > follow_index) {
 }
 
 if (sprite_index = face_sprites.up) {
-    depth = 0;
+    depth = obj_mainchara.depth - 99999;
 } else {
     depth = 1;
 }

@@ -1,0 +1,1 @@
+screen_flash_con = 3;

@@ -1,0 +1,1 @@
+window_set_caption("THE CANCELED SHOW")

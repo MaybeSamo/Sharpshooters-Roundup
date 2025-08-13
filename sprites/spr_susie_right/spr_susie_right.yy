@@ -26,7 +26,7 @@
   ],
   "name":"spr_susie_right",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Debug",
     "path":"folders/Sprites/Debug.yy",
@@ -90,7 +90,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":12,
-    "yorigin":21,
+    "yorigin":24,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -1,0 +1,1 @@
+i_create(0, 0, obj_dtr_battle_controller);

@@ -1,1 +1,0 @@
-text[0] = "* Bookshelf text 1.";

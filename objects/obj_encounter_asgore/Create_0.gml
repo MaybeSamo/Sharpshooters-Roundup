@@ -6,7 +6,7 @@ encounter_stats = [[5, 100]];
 attacks_randomized = true;
 attacks = [obj_asgore_knife_attack];
 state = 0;
-box_dialogues = [["* /RAsgore/W blocks your way!"]];
+box_dialogues = [["* Ribbit ribbit and all that"]];
 mercy = [0];
 can_flee = true;
 

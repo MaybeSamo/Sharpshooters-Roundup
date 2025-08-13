@@ -1,1 +1,1 @@
-audio_set_master_gain(0, 0)
+audio_set_master_gain(0, 0.5)

@@ -15,4 +15,5 @@ killtimer = 0;
 killactive = 0;
 size = 1;
 gold = false;
+color = c_red;
 depth = -99999999;

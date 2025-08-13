@@ -23,7 +23,7 @@
   ],
   "name":"spr_solidtall",
   "nineSlice":null,
-  "origin":4,
+  "origin":1,
   "parent":{
     "name":"Overworld",
     "path":"folders/Sprites/Overworld.yy",
@@ -78,7 +78,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":10,
-    "yorigin":10,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

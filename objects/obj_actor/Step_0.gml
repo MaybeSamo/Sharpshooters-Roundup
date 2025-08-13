@@ -1,4 +1,11 @@
 siner += 1;
+if (use_tween) {
+    x += (x_to - x) / 7;
+    y += (y_to - y) / 7;   
+} else {
+    x_to = x;
+    y_to = y;
+}
 
 if dir_sprite {
     switch dir {

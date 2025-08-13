@@ -3,6 +3,8 @@
   "%Name":"obj_dtr_battle_soul",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":16,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_dtr_battle_soul",
@@ -30,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_heartsmall",
-    "path":"sprites/spr_heartsmall/spr_heartsmall.yy",
+    "name":"spr_heart",
+    "path":"sprites/spr_heart/spr_heart.yy",
   },
   "spriteMaskId":{
     "name":"spr_heartsmall",

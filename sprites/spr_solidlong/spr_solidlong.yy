@@ -23,7 +23,7 @@
   ],
   "name":"spr_solidlong",
   "nineSlice":null,
-  "origin":4,
+  "origin":3,
   "parent":{
     "name":"Overworld",
     "path":"folders/Sprites/Overworld.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":10,
+    "xorigin":0,
     "yorigin":10,
   },
   "swatchColours":null,
