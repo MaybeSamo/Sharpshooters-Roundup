@@ -32,3 +32,4 @@ shake_strength = 5;
 shake_timer = 120;
 
 window_set_size(640, 480);
+audio_set_master_gain(0, 0)

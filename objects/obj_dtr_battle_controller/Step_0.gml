@@ -40,10 +40,13 @@ switch (global.battle_state) {
                     global.party_battle_actors[party_member_selected].image_index = 0;
                     array_push(global.party_member_actions, global.battle_ui[party_member_selected].ui_selection);
                     party_member_selected += 1;
+                    global.battle_ui[party_member_selected].ui_selection = 0;
+                    break;
             }
         }
         if (key_return and party_member_selected != 0) {
             party_member_selected -= 1;
+            global.battle_ui[party_member_selected].ui_selection = 0;
             array_pop(global.party_member_actions);
         }
         if (key_accept and party_member_selected == array_length(global.party_battle_actors) - 1) {
@@ -74,14 +77,19 @@ switch (global.battle_state) {
             }   
         }
         writer.text = [""];
-        for (var i = 0; i < array_length(global.battle_ui); i++) {
-            global.battle_ui[i].selecting_ui = false;
-        }
         if (!i_ex(obj_dtr_battle_box)) {
             soul.x = 160;
             soul.y = 109;
             soul.visible = true;
             i_create(160, 109, obj_dtr_battle_box);
+        }
+        break;
+    case BattleState.DoActions:
+        writer.text = [""];
+        switch (global.party_member_actions[current_action]) {
+            case 0:
+                instance_create_depth(74, 191, -9999999, obj_dtr_fight_timing_ui);
+                break;
         }
         break;
 }

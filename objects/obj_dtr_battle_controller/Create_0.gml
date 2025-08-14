@@ -11,6 +11,7 @@ global.attack_timer = 0;
 
 fade_alpha = 0;
 fadecon = 0;
+current_action = 0;
 
 party_member_selected = 0;
 
@@ -19,6 +20,7 @@ enum BattleState {
     SelectEnemy = 1,
     SelectItem = 2,
     Attack = 3,
+    DoActions = 4
 }
 
 enum BattleAction {

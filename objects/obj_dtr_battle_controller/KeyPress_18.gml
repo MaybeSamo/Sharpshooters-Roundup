@@ -1,2 +1,1 @@
-global.battle_state = BattleState.SelectAction;
-instance_destroy(obj_ss_test_bullet);
+scr_shake(5, 30);

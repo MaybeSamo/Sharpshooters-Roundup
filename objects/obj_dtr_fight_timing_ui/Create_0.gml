@@ -1,0 +1,10 @@
+depth = -999999999;
+image_xscale = 0.5;
+image_yscale = 0.5;
+icon_spr = spr_kris_head;
+whiteout_image_index = 2;
+flashcon = 1;
+flash = 1;
+bar = instance_create_depth(x + random_range(100, 250), y, depth - 5, obj_dtr_fight_timing_bar);
+bar.image_xscale = 0.5;
+bar.image_yscale = 0.5;
