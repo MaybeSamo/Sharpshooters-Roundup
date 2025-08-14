@@ -8,3 +8,4 @@ flash = 1;
 bar = instance_create_depth(x + random_range(100, 250), y, depth - 5, obj_dtr_fight_timing_bar);
 bar.image_xscale = 0.5;
 bar.image_yscale = 0.5;
+target_actor = obj_battle_actor_kris;
