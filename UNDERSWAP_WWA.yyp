@@ -421,10 +421,10 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
-    {"roomId":{"name":"room_battle_debug","path":"rooms/room_battle_debug/room_battle_debug.yy",},},
-    {"roomId":{"name":"room_sharpshooter","path":"rooms/room_sharpshooter/room_sharpshooter.yy",},},
-    {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
     {"roomId":{"name":"room_firstroom","path":"rooms/room_firstroom/room_firstroom.yy",},},
+    {"roomId":{"name":"room_sharpshooter","path":"rooms/room_sharpshooter/room_sharpshooter.yy",},},
+    {"roomId":{"name":"room_battle_debug","path":"rooms/room_battle_debug/room_battle_debug.yy",},},
+    {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
     {"roomId":{"name":"room_cutscene_test","path":"rooms/room_cutscene_test/room_cutscene_test.yy",},},
     {"roomId":{"name":"room_shop","path":"rooms/room_shop/room_shop.yy",},},
   ],
