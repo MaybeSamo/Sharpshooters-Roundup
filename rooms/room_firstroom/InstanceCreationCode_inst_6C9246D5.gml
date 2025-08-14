@@ -1,0 +1,1 @@
+text = ["* This door...^1, Its Locked...."]

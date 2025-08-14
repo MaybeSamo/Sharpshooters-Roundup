@@ -1,1 +1,0 @@
-text = ["* Hi^1, this is an interactable box"]
