@@ -1,0 +1,1 @@
+i_create(64, 96, obj_rudebuster_anim);

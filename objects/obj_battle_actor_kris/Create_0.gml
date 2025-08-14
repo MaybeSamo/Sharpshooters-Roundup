@@ -12,6 +12,7 @@ use_magic = false;
 color = c_aqua;
 actor_index = 0;
 loop_animation = true;
+spawned_dmg = false;
 actions = {
     
 }

@@ -10,6 +10,7 @@
     {"name":"inst_216394E0","path":"rooms/room_battle_debug/room_battle_debug.yy",},
     {"name":"inst_6EC4265D","path":"rooms/room_battle_debug/room_battle_debug.yy",},
     {"name":"inst_60111929","path":"rooms/room_battle_debug/room_battle_debug.yy",},
+    {"name":"inst_7953CD05","path":"rooms/room_battle_debug/room_battle_debug.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -19,6 +20,7 @@
         {"$GMRInstance":"v2","%Name":"inst_216394E0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_216394E0","objectId":{"name":"obj_battle_actor_susie","path":"objects/obj_battle_actor_susie/obj_battle_actor_susie.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":159.5,},
         {"$GMRInstance":"v2","%Name":"inst_6EC4265D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EC4265D","objectId":{"name":"obj_dtr_enter_battle","path":"objects/obj_dtr_enter_battle/obj_dtr_enter_battle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":35.0,"y":29.0,},
         {"$GMRInstance":"v2","%Name":"inst_60111929","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_60111929","objectId":{"name":"obj_sharpshooter_enemy","path":"objects/obj_sharpshooter_enemy/obj_sharpshooter_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":245.0,"y":106.0,},
+        {"$GMRInstance":"v2","%Name":"inst_7953CD05","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7953CD05","objectId":{"name":"obj_rudebuster_bolt","path":"objects/obj_rudebuster_bolt/obj_rudebuster_bolt.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":68.0,"y":96.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4281532440,"depth":200,"effectEnabled":true,"effectType":"_filter_ripples","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
         {"name":"g_RipplesPosition","type":0,"value":"0",},

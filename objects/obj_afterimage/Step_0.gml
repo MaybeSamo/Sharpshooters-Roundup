@@ -3,3 +3,4 @@ if (image_alpha <= 0) {
 }
 
 image_alpha -= fade_speed;
+image_xscale += scale_speed;

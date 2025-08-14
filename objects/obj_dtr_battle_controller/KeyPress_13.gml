@@ -1,0 +1,1 @@
+i_create(obj_battle_actor_susie.x, obj_battle_actor_susie.y, obj_rudebuster);

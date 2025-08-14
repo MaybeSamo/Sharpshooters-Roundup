@@ -1,23 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sharpshooter_enemy",
+  "%Name":"obj_rudebuster",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":18,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_sharpshooter_enemy",
+  "name":"obj_rudebuster",
   "overriddenProperties":[],
   "parent":{
     "name":"Deltarune Battle",
     "path":"folders/Objects/Deltarune Battle.yy",
   },
-  "parentObjectId":{
-    "name":"obj_dtr_battle_enemy",
-    "path":"objects/obj_dtr_battle_enemy/obj_dtr_battle_enemy.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sharpshooter_idle",
-    "path":"sprites/spr_sharpshooter_idle/spr_sharpshooter_idle.yy",
+    "name":"spr_rudebuster",
+    "path":"sprites/spr_rudebuster/spr_rudebuster.yy",
   },
   "spriteMaskId":null,
   "visible":true,

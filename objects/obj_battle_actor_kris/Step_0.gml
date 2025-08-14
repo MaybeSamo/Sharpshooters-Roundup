@@ -35,4 +35,18 @@ if (!loop_animation) {
     }
 }
 
+if (i_ex(obj_dtr_battle_controller)) {
+    if (sprite_index == sprites.attack and global.battle_state == BattleState.DoActions) {
+        if (image_index >= image_number - 1) {
+            if (!spawned_dmg) {
+                play_sound(snd_hurt);
+                spawned_dmg = true;
+                var dmg = i_create(global.current_enemy[0].x, global.current_enemy[0].y, obj_dmgwriter);
+                dmg.color = c_aqua;
+                dmg.damage = 100;   
+            }
+        }
+    }   
+}
+
 show_debug_message(loop_animation)
