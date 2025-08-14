@@ -2,8 +2,8 @@ var key_left = keyboard_check(vk_left);
 var key_right = keyboard_check(vk_right);
 var key_up = keyboard_check(vk_up);
 var key_down = keyboard_check(vk_down);
-var key_run = keyboard_check(ord("X"));
-var key_interact = keyboard_check(ord("Z"));
+var key_run = keyboard_check(ord("X")) || keyboard_check(vk_shift);
+var key_interact = keyboard_check(ord("Z")) || keyboard_check(vk_enter);
 
 var moving = false;
 
