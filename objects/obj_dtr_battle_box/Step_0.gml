@@ -36,7 +36,7 @@ if (growth == 1)
         d.image_xscale = _scale;
         d.image_yscale = _scale;
         d.image_angle = image_angle;
-        d.depth = depth - 1;
+        d.depth = depth - 9999;
         d.image_blend = image_blend;
         d.image_alpha = (1 - image_alpha) + 0.1;
         d.image_speed = 0;

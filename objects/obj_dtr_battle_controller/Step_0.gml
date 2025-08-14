@@ -77,6 +77,9 @@ switch (global.battle_state) {
             }   
         }
         writer.text = [""];
+        for (var i = 0; i < array_length(global.battle_ui); i++) {
+            global.battle_ui[i].selecting_ui = false;
+        }
         if (!i_ex(obj_dtr_battle_box)) {
             soul.x = 160;
             soul.y = 109;

@@ -15,6 +15,7 @@ if (flashcon == 1) {
 }
 
 if (keyboard_check_pressed(ord("Z"))) {
+    play_sound(snd_laz);
     flash = 1;
     flashcon = 1;
 }
