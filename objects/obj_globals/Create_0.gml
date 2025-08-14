@@ -28,6 +28,7 @@ global.plot = 0;
 global.battle_ui = [];
 global.current_enemy = [obj_sharpshooter_enemy];
 global.party_member_actions = 0;
+global.timing_lines = [];
 shake_strength = 5;
 shake_timer = 120;
 

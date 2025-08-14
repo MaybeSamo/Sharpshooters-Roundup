@@ -1,4 +1,4 @@
-if (i_ex(obj_dtr_battle_ui)) {
+if (i_ex(obj_dtr_battle_ui) and global.battle_state == BattleState.SelectAction) {
     if (array_length(global.party_member_actions) <= actor_index) {
         loop_animation = true;
         image_speed = 1;

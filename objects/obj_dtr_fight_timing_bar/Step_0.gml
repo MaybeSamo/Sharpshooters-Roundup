@@ -16,5 +16,9 @@ if (con == 1) {
 }
 
 if (keyboard_check_pressed(ord("Z")) and can_hit) {
+    target_actor.loop_animation = false;
+    target_actor.image_index = 0;
+    target_actor.sprite_index = target_actor.sprites.attack;
+    play_sound(snd_laz);
     con = 1;
 }

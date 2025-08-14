@@ -88,10 +88,24 @@ switch (global.battle_state) {
         }
         break;
     case BattleState.DoActions:
+        for (var i = 0; i < array_length(global.battle_ui); i++) {
+            global.battle_ui[i].selecting_ui = false;
+        }
         writer.text = [""];
         switch (global.party_member_actions[current_action]) {
             case 0:
-                instance_create_depth(74, 191, -9999999, obj_dtr_fight_timing_ui);
+                if (!i_ex(obj_dtr_fight_timing_ui)) {
+                    if (current_action == 0) {
+                        var i = instance_create_depth(74, 191, -9999999, obj_dtr_fight_timing_ui);
+                        i.target_actor = obj_battle_actor_kris;
+                        i.icon_spr = spr_kris_head;
+                    }
+                    if (current_action == 1) {
+                        var i = instance_create_depth(74, 210, -9999999, obj_dtr_fight_timing_ui);
+                        i.target_actor = obj_battle_actor_susie;
+                        i.icon_spr = spr_susie_head;
+                    }
+                }
                 break;
         }
         break;
