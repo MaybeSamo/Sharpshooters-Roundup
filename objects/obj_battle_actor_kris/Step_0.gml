@@ -4,7 +4,7 @@ if (i_ex(obj_dtr_battle_ui) and global.battle_state == BattleState.SelectAction)
         image_speed = 1;
         sprite_index = sprites.idle;
     } else if (actor_index >= 0 && actor_index < array_length(global.party_member_actions)) {
-        switch (global.party_member_actions[actor_index]) {
+        switch (global.party_member_actions[actor_index].action) {
             case 0:
                 loop_animation = true;
                 sprite_index = sprites.attack_ready;

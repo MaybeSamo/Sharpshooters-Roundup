@@ -31,6 +31,9 @@ for (var i = 0; i < array_length(positions); i++) {
     var yy = pos[1];
 
     var inst = instance_create_depth(xx, yy, -9999, obj_battle_player_info_ui);
+    if (i == 1) {
+        inst.use_magic = true;
+    }
     inst.actor = global.party_battle_actors[i];
     inst.ui_index = i;
     array_push(global.battle_ui, inst);
