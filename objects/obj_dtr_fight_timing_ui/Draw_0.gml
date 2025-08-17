@@ -1,3 +1,7 @@
+if (i_ex(bar)) {
+    bar.target_actor = target_actor;   
+}
+
 if (icon_spr == spr_kris_head) {
     image_index = 0;
     whiteout_image_index = 3;
@@ -40,9 +44,16 @@ if (instance_exists(smallest_bar)) {
     }
 }
 
-draw_self();
-draw_sprite_halfsize(spr_press, 0, x - 40, y + 1);
-draw_sprite_halfsize(icon_spr, 0, x - 60, y + 1);
-draw_sprite_ext(sprite_index, whiteout_image_index, x, y, image_xscale, image_yscale, 0, c_white, flash);
+if (fade_out) {
+    image_alpha -= 0.1;
+    if (image_alpha <= 0) {
+        instance_destroy();
+    }
+}
 
-show_debug_message(smallest_bar);
+draw_self();
+draw_set_alpha(image_alpha);
+draw_sprite_ext(spr_press, 0, x - 40, y + 1, 0.5, 0.5, 0, c_white, image_alpha);
+draw_sprite_ext(icon_spr, 0, x - 60, y + 1, 0.5, 0.5, 0, c_white, image_alpha);
+draw_sprite_ext(sprite_index, whiteout_image_index, x, y, image_xscale, image_yscale, 0, c_white, flash);
+draw_set_alpha(1);

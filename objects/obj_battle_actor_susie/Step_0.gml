@@ -1,4 +1,5 @@
 if (i_ex(obj_dtr_battle_ui) and global.battle_state == BattleState.SelectAction) {
+    spawned_dmg = false;
     if (array_length(global.party_member_actions) <= actor_index) {
         loop_animation = true;
         image_speed = 1;
@@ -42,7 +43,7 @@ if (i_ex(obj_dtr_battle_controller)) {
                 play_sound(snd_hurt);
                 spawned_dmg = true;
                 var dmg = i_create(global.current_enemy[0].x, global.current_enemy[0].y, obj_dmgwriter);
-                dmg.color = c_aqua;
+                dmg.color = make_color_rgb(255, 0, 255);
                 dmg.damage = 100;   
             }
         }

@@ -22,3 +22,7 @@ if (keyboard_check_pressed(ord("Z")) and can_hit and con == 0) {
     play_sound(snd_laz);
     con = 1;
 }
+
+if (image_alpha <= 0) {
+    instance_destroy();
+}
