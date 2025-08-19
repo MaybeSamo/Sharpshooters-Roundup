@@ -17,10 +17,35 @@ function scr_get_expression(argument0) {
                 sprite: noone,
                 sound: snd_generic_text,
             }
+        case "S0" :
+            return {
+                sprite: spr_susie_nervous_side,
+                sound: snd_txtsus
+            }
+        case "S1":
+            return {
+                sprite: spr_susie_neutral,
+                sound: snd_txtsus
+            }
+        case "S2":
+            return {
+                sprite: spr_susie_netural_side,
+                sound: snd_txtsus
+            }
+        case "R0":
+            return {
+                sprite: spr_ralsie_pensive,
+                sound: snd_txtral
+            }
+        case "R1":
+            return {
+                sprite: spr_ralsei_owo_angry,
+                sound: snd_txtral
+            }
         default:
             return {
                 sprite: -1,
-                sound: snd_generic_text
+                sound: snd_nosound
             };
     }
 }

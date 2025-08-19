@@ -38,9 +38,9 @@ if (con == 1) {
     c_image_speed(0);
     c_image_index(0);
     c_set_global("box_pos", "top");
-    c_msgpush("* Finally.^1\n* Took long enough to get\n  in here.");
-    c_msgpush("* Odd...^1\n* All that's inside is...");
-    c_msgpush("* Tenna...?");
+    c_msgpush("#ES0* Finally.^1\n* Took long enough to get\n  in here.");
+    c_msgpush("#ER0* Odd...^1\n* All that's inside is...");
+    c_msgpush("#ES0* Tenna...?");
     c_wait_talk();
     c_shake(false);
     c_wait(15);
@@ -58,9 +58,9 @@ if (con == 1) {
     c_var_inst_set(obj_writer, "tenna_speak", true);
     c_wait_talk();
     c_set_global("box_pos", "top");
-    c_msgpush("* Hell no.^1\n* Took long enough to get\n  in here.");
-    c_msgpush("* At least give us an item\n  or something.");
-    c_msgpush("* (Susie!)^1\n* (Don't say thing's like\n  that!)");
+    c_msgpush("#ES1* Hell no.^1\n* Took long enough to get\n  in here.");
+    c_msgpush("#ES2* At least give us an item\n  or something.");
+    c_msgpush("#ER1* (Susie!)^1\n* (Don't say thing's like\n  that!)");
     c_wait_talk();
     c_sel_actor("ten");
     c_image_scale(1.25, 0.8);
@@ -140,9 +140,9 @@ if (con == 3) {
     })
     c_wait(30);
     c_set_global("box_pos", "top");
-    c_msgpush("* Ralsei!");
-    c_msgpush("* I-^1its okay Susie...");
-    c_msgpush("* I'll be back in a\nmoment.");
+    c_msgpush("#ES0* Ralsei!");
+    c_msgpush("#ER0* I-^1its okay Susie...");
+    c_msgpush("#ER0* I'll be back in a\nmoment.");
     c_wait_talk();
     c_wait(30);
     c_exec_func(function () {
@@ -159,7 +159,7 @@ if (con == 3) {
     c_wait(20);
     c_sel_actor("su");
     c_sprite_index(spr_susie_point_right);
-    c_msgpush("* Alright, asshole.^1\n* Good Luck.");
+    c_msgpush("#ES0* Alright, asshole.^1\n* Good Luck.");
     c_wait_talk();
     c_end_cutscene();
     con = 4;
