@@ -36,7 +36,7 @@
   ],
   "name":"spr_susie_rudebuster",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Deltarune",
     "path":"folders/Sprites/Deltarune.yy",
@@ -130,7 +130,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":61,
-    "yorigin":39,
+    "yorigin":57,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

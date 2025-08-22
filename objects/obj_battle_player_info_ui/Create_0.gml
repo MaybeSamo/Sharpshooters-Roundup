@@ -14,3 +14,4 @@ y = 240;
 selecting_y = -15;      // small upward offset when selected
 not_selecting_y = 0;   // neutral position
 depth = -99999999999999;
+use_magic = false;

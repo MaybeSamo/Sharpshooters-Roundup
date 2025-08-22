@@ -57,12 +57,12 @@ if (use_box) {
 
     // Draw face sprite
     if (global.box_pos == "bottom") {
-        draw_sprite(spr_textbox, 0, global.camerax + 160, global.cameray + 192); 
+        draw_sprite(spr_dtr_textbox, 0, global.camerax + 160, global.cameray + 192); 
         if (face_sprite != -1) {
             draw_sprite(face_sprite, 0, global.camerax + 50, global.cameray + 192);
         }
     } else if (global.box_pos == "top") {
-        draw_sprite(spr_textbox, 0, global.camerax + 160, global.cameray + 47);
+        draw_sprite(spr_dtr_textbox, 0, global.camerax + 160, global.cameray + 47);
         if (face_sprite != -1) {
             draw_sprite(face_sprite, 0, global.camerax + 50, global.cameray + 47);
         }
@@ -250,6 +250,7 @@ if (draw_char >= total_visible_chars && !delayed) {
             done = false;
             draw_char = 0;
             page += 1;
+            current_expression = [];
         }
     }
 }

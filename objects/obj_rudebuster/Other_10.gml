@@ -8,7 +8,7 @@ for (var i = 0; i < 4; i += 1)
     burst[i].y = y;
     burst[i].image_angle = 45 + (i * 90);
     burst[i].direction = burst[i].image_angle;
-    burst[i].speed = 12.5;
+    burst[i].speed = 10;
     burst[i].depth = depth - 10;
 }
 
@@ -22,6 +22,6 @@ for (var i = 4; i < 8; i += 1)
     burst[i].y = y;
     burst[i].image_angle = 45 + (i * 90);
     burst[i].direction = burst[i].image_angle;
-    burst[i].speed = 12.5;
+    burst[i].speed = 10;
     burst[i].depth = depth - 10;
 }

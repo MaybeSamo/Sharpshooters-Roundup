@@ -1,1 +1,1 @@
-i_create(64, 96, obj_rudebuster_anim);
+i_create(obj_battle_actor_susie.x, obj_battle_actor_susie.y, obj_rudebuster_anim);

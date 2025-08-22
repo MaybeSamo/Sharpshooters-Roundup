@@ -4,8 +4,10 @@ writer.snd = snd_nosound;
 writer.can_accept = false;
 soul = instance_create_depth(camerax() + 0, cameray() + 0, -99999, obj_dtr_battle_soul);
 
-global.battle_state = BattleState.DoActions;
-global.party_member_actions = [0];
+global.battle_state = BattleState.SelectAction;
+global.party_member_actions = [];
+global.action_kris = 0;
+global.action_susie = 0;
 global.battle_con = 0;
 global.attack_timer = 0;
 

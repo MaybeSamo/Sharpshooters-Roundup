@@ -15,30 +15,22 @@ if (x == target.x and y == target.y and con == 0) {
     event_user(0);
     con = 1;
     play_sound(snd_rudebuster_hit);
+    var dmg = i_create(target.x, target.y, obj_dmgwriter);
+    dmg.color = make_color_rgb(255, 0, 255);
+    dmg.damage = damage;
     instance_destroy();
 }
 
 if (con == 1) {
-    for (var i = 0; i < 4; i += 1)
-    {
-        if (instance_exists(burst[i]))
-        {
-            with (burst[i])
-            {
-                image_yscale -= 0.1;
+    var all_gone = true;
+    for (var i = 0; i < 8; i++) {
+        if (instance_exists(burst[i])) {
+            all_gone = false;
+            with (burst[i]) {
+                if (image_yscale <= 0) instance_destroy();
+                speed -= 1;
             }
         }
     }
-    
-    for (var i = 4; i < 8; i += 1)
-    {
-        if (instance_exists(burst[i]))
-        {
-            with (burst[i])
-            {
-                image_yscale -= 0.1;
-            }
-        }
-    }
-    
+    if (all_gone) instance_destroy();
 }

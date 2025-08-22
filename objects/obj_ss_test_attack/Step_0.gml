@@ -4,8 +4,5 @@ if (global.attack_timer % 30 == 0) {
 }
 
 if (global.attack_timer == 200) {
-    instance_destroy();
-    instance_destroy(obj_dtr_battle_bullet);
-    global.battle_state = BattleState.SelectAction;
-    global.attack_timer = 0;
+    scr_handle_end_attack();
 }

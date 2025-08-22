@@ -21,7 +21,11 @@ if (selecting_ui) {
         ui_selection = 4;
     }
     draw_sprite_halfsize(spr_dtr_fight, ui_selection == 0 ? 1 : 0, x + 3, y - 0.5);
-    draw_sprite_halfsize(spr_dtr_act, ui_selection == 1 ? 1 : 0, x + 20.5, y - 0.5);
+    if (!use_magic) {
+        draw_sprite_halfsize(spr_dtr_act, ui_selection == 1 ? 1 : 0, x + 20.5, y - 0.5);   
+    } else {
+         draw_sprite_halfsize(spr_dtr_magic, ui_selection == 1 ? 1 : 0, x + 20.5, y - 0.5);
+    }
     draw_sprite_halfsize(spr_dtr_item, ui_selection == 2 ? 1 : 0, x + 38, y - 0.5);
     draw_sprite_halfsize(spr_dtr_spare, ui_selection == 3 ? 1 : 0, x + 55.5, y - 0.5);
     draw_sprite_halfsize(spr_dtr_defend, ui_selection == 4 ? 1 : 0, x + 73, y - 0.5);
@@ -32,7 +36,7 @@ draw_set_color(c_white);
 if (array_length(global.party_member_actions) <= ui_index) {
     draw_sprite_halfsize(actor.icon_spr, 0, x + offset_x, y - 2 + offset_y);   
 } else if (ui_index >= 0 && ui_index < array_length(global.party_member_actions)) {
-    switch (global.party_member_actions[ui_index]) {
+    switch (global.party_member_actions[ui_index].action) {
         case 0:
             draw_sprite_halfsize(actor.action_sprites.fight, 0, x + offset_x, y - 2 + offset_y);
             break;

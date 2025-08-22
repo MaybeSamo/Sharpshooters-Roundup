@@ -1,3 +1,4 @@
+damage = 150;
 target = global.current_enemy[0];
 scr_move_towards_point(self, target.x, target.y, 12);
 play_sound(snd_rudebuster_swing);
