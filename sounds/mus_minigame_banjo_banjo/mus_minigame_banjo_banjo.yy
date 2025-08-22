@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"mus_dtr_battle_2",
+  "%Name":"mus_minigame_banjo_banjo",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":-1.0,
-  "name":"mus_dtr_battle_2",
+  "duration":103.15068,
+  "name":"mus_minigame_banjo_banjo",
   "parent":{
     "name":"Music",
     "path":"folders/Sounds/Music.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_dtr_battle_2.mp3",
+  "soundFile":"mus_minigame_banjo_banjo.ogg",
   "type":0,
   "volume":1.0,
 }

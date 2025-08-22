@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":39.619297,
+  "duration":18.208797,
   "name":"mus_precowboy",
   "parent":{
     "name":"Music",
