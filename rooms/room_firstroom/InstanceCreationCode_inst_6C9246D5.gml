@@ -1,1 +1,1 @@
-text = ["* This door...^1, Its Locked...."]
+text = ["* Its Locked^1.^1.^1."]
