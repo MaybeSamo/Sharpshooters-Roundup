@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_kris_kneel_stand",
   "bboxMode":0,
   "bbox_bottom":36,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"32364b7a-22c3-46ef-87ae-fb8fe5eb9c40","name":"32364b7a-22c3-46ef-87ae-fb8fe5eb9c40","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7f80647e-ed10-4e1f-8312-b55281676150","name":"7f80647e-ed10-4e1f-8312-b55281676150","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0cf6a4ea-88c5-4b29-936f-4a1c832f5eee","name":"0cf6a4ea-88c5-4b29-936f-4a1c832f5eee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c462190f-0e6e-45c2-996e-9ac3211931d1","name":"c462190f-0e6e-45c2-996e-9ac3211931d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d92e1be6-c497-421d-b27f-f54df89d0f72","name":"d92e1be6-c497-421d-b27f-f54df89d0f72","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"6876a5ca-3404-4799-b92f-797183a6ef61","name":"6876a5ca-3404-4799-b92f-797183a6ef61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"32364b7a-22c3-46ef-87ae-fb8fe5eb9c40","name":"32364b7a-22c3-46ef-87ae-fb8fe5eb9c40","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7f80647e-ed10-4e1f-8312-b55281676150","name":"7f80647e-ed10-4e1f-8312-b55281676150","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0cf6a4ea-88c5-4b29-936f-4a1c832f5eee","name":"0cf6a4ea-88c5-4b29-936f-4a1c832f5eee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c462190f-0e6e-45c2-996e-9ac3211931d1","name":"c462190f-0e6e-45c2-996e-9ac3211931d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d92e1be6-c497-421d-b27f-f54df89d0f72","name":"d92e1be6-c497-421d-b27f-f54df89d0f72","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6876a5ca-3404-4799-b92f-797183a6ef61","name":"6876a5ca-3404-4799-b92f-797183a6ef61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,24 +75,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"32364b7a-22c3-46ef-87ae-fb8fe5eb9c40","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d3577009-426b-4a93-9acd-6c10b6f38225","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7f80647e-ed10-4e1f-8312-b55281676150","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b585ce56-ee80-4aa5-8eab-5eb8a294314b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0cf6a4ea-88c5-4b29-936f-4a1c832f5eee","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0f2e531a-27d4-4b31-95e2-d4e8a638ddba","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c462190f-0e6e-45c2-996e-9ac3211931d1","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5e613427-2b23-4770-ad17-706395040272","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d92e1be6-c497-421d-b27f-f54df89d0f72","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0b777a9d-fbff-45d3-ac57-e7de519f690f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6876a5ca-3404-4799-b92f-797183a6ef61","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"13c8c49e-05ed-44b3-9536-0970d773d8b7","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"32364b7a-22c3-46ef-87ae-fb8fe5eb9c40","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d3577009-426b-4a93-9acd-6c10b6f38225","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7f80647e-ed10-4e1f-8312-b55281676150","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b585ce56-ee80-4aa5-8eab-5eb8a294314b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0cf6a4ea-88c5-4b29-936f-4a1c832f5eee","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0f2e531a-27d4-4b31-95e2-d4e8a638ddba","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c462190f-0e6e-45c2-996e-9ac3211931d1","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5e613427-2b23-4770-ad17-706395040272","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d92e1be6-c497-421d-b27f-f54df89d0f72","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0b777a9d-fbff-45d3-ac57-e7de519f690f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6876a5ca-3404-4799-b92f-797183a6ef61","path":"sprites/spr_kris_kneel_stand/spr_kris_kneel_stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"13c8c49e-05ed-44b3-9536-0970d773d8b7","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

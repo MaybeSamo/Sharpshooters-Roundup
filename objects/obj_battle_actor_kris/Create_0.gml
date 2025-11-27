@@ -26,5 +26,9 @@ sprites = {
     magic: noone,
     item: noone,
     use_item: noone,
-    defend: spr_kris_defend
+    defend: spr_kris_defend,
+	banjo_idle: spr_kris_cowboy_banjo,
+	banjo_hit1: spr_kris_cowboy_hitchord,
+	banjo_hit2: spr_kris_cowboy_hitchordright,
+	banjo_hit3: spr_kris_cowboy_hitchordup
 }

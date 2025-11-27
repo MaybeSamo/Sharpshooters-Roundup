@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_kris_cowboy_idle",
   "bboxMode":0,
   "bbox_bottom":42,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"054c524e-a3e2-470e-85c1-e23021ab793a","name":"054c524e-a3e2-470e-85c1-e23021ab793a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"054c524e-a3e2-470e-85c1-e23021ab793a","name":"054c524e-a3e2-470e-85c1-e23021ab793a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -42,7 +42,7 @@
     ],
     "top":0,
   },
-  "origin":0,
+  "origin":7,
   "parent":{
     "name":"Kris",
     "path":"folders/Sprites/Deltarune/Kris.yy",
@@ -96,8 +96,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":18,
+    "yorigin":43,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

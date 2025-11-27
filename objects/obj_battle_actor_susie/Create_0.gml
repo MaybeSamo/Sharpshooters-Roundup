@@ -24,7 +24,11 @@ sprites = {
     magic: noone,
     item: noone,
     use_item: noone,
-    defend: spr_susie_defend
+    defend: spr_susie_defend,
+	banjo_idle: spr_susie_idle,
+	banjo_hit1: spr_susie_defend,
+	banjo_hit2: spr_susie_left,
+	banjo_hit3: spr_susie_right
 }
 actor_index = 1;
 loop_animation = false;

@@ -14,6 +14,14 @@ audio_play_sound(mus_minigame_banjo_banjo, 0, 1, 1.0, undefined, 1.0);
 /// @DnDSaveInfo : "soundid" "mus_minigame_banjo_inst"
 audio_play_sound(mus_minigame_banjo_inst, 0, 1, 1.0, undefined, 1.0);
 
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 685E24F4
+/// @DnDArgument : "soundid" "mus_sharpshooter"
+/// @DnDArgument : "loop" "1"
+/// @DnDSaveInfo : "soundid" "mus_sharpshooter"
+audio_play_sound(mus_sharpshooter, 0, 1, 1.0, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
 /// @DnDVersion : 1.1
 /// @DnDHash : 6D01FB7F
@@ -29,3 +37,11 @@ audio_sound_gain(mus_minigame_banjo_banjo, 0, 0);
 /// @DnDArgument : "volume" "0"
 /// @DnDSaveInfo : "sound" "mus_minigame_banjo_inst"
 audio_sound_gain(mus_minigame_banjo_inst, 0, 0);
+
+/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
+/// @DnDVersion : 1.1
+/// @DnDHash : 489C7A2F
+/// @DnDArgument : "sound" "mus_sharpshooter"
+/// @DnDArgument : "volume" "0"
+/// @DnDSaveInfo : "sound" "mus_sharpshooter"
+audio_sound_gain(mus_sharpshooter, 0, 0);

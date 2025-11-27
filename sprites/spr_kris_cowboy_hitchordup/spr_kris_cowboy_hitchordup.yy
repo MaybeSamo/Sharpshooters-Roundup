@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_kris_cowboy_hitchordup",
   "bboxMode":0,
   "bbox_bottom":45,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"48c55e87-4a8f-4168-9f97-1b792aa548e5","name":"48c55e87-4a8f-4168-9f97-1b792aa548e5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d8085f82-611e-47ab-b9b2-70e913d3927a","name":"d8085f82-611e-47ab-b9b2-70e913d3927a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9d68d399-3807-48ff-ba23-776a12c7d29f","name":"9d68d399-3807-48ff-ba23-776a12c7d29f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bda2bf4c-bcd6-41c1-8881-710068b1c41b","name":"bda2bf4c-bcd6-41c1-8881-710068b1c41b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":46,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e76251d3-63ee-4b9c-a920-b8efc6eb7e56","blendMode":0,"displayName":"default","isLocked":false,"name":"e76251d3-63ee-4b9c-a920-b8efc6eb7e56","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"63fd7751-b6aa-4491-bcad-cdccd4dc4cec","blendMode":0,"displayName":"default","isLocked":false,"name":"63fd7751-b6aa-4491-bcad-cdccd4dc4cec","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_kris_cowboy_hitchordup",
   "nineSlice":{
@@ -91,11 +91,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"48c55e87-4a8f-4168-9f97-1b792aa548e5","path":"sprites/spr_kris_cowboy_hitchordup/spr_kris_cowboy_hitchordup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0ebb1fed-eecc-49fe-b623-2c761026f2f9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d68d399-3807-48ff-ba23-776a12c7d29f","path":"sprites/spr_kris_cowboy_hitchordup/spr_kris_cowboy_hitchordup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a090036b-d62b-434a-91ca-3c065fed4be9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d8085f82-611e-47ab-b9b2-70e913d3927a","path":"sprites/spr_kris_cowboy_hitchordup/spr_kris_cowboy_hitchordup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5e364e4c-8bac-45e6-9df8-6339116368f1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bda2bf4c-bcd6-41c1-8881-710068b1c41b","path":"sprites/spr_kris_cowboy_hitchordup/spr_kris_cowboy_hitchordup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8754c4d9-1a08-4b10-9190-c4e6f2747db8","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

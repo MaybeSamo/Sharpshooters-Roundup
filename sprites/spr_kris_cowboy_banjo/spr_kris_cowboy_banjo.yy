@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_kris_cowboy_banjo",
   "bboxMode":0,
   "bbox_bottom":41,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1bc296fc-7e5a-4825-ab09-30de79937452","name":"1bc296fc-7e5a-4825-ab09-30de79937452","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1bc296fc-7e5a-4825-ab09-30de79937452","name":"1bc296fc-7e5a-4825-ab09-30de79937452","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -42,7 +42,7 @@
     ],
     "top":0,
   },
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"Kris",
     "path":"folders/Sprites/Deltarune/Kris.yy",
@@ -96,8 +96,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":25,
-    "yorigin":42,
+    "xorigin":20,
+    "yorigin":43,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

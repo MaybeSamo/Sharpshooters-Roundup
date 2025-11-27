@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"UNDERSWAP_WWA",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -58,12 +58,14 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_ripples-1.0.0","name":"io.gamemaker.gm_filter_ripples-1.0.0","path":"io.gamemaker.gm_filter_ripples-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"UNDERSWAP_WWA",
   "resources":[
@@ -79,6 +81,7 @@
     {"id":{"name":"obj_animation","path":"objects/obj_animation/obj_animation.yy",},},
     {"id":{"name":"obj_asgore_knife_attack","path":"objects/obj_asgore_knife_attack/obj_asgore_knife_attack.yy",},},
     {"id":{"name":"obj_asgore_knife","path":"objects/obj_asgore_knife/obj_asgore_knife.yy",},},
+    {"id":{"name":"obj_banjominigamehandler","path":"objects/obj_banjominigamehandler/obj_banjominigamehandler.yy",},},
     {"id":{"name":"obj_battle_actor_kris","path":"objects/obj_battle_actor_kris/obj_battle_actor_kris.yy",},},
     {"id":{"name":"obj_battle_actor_ralsei","path":"objects/obj_battle_actor_ralsei/obj_battle_actor_ralsei.yy",},},
     {"id":{"name":"obj_battle_actor_susie","path":"objects/obj_battle_actor_susie/obj_battle_actor_susie.yy",},},
@@ -380,6 +383,7 @@
     {"id":{"name":"spr_markerC","path":"sprites/spr_markerC/spr_markerC.yy",},},
     {"id":{"name":"spr_markerD","path":"sprites/spr_markerD/spr_markerD.yy",},},
     {"id":{"name":"spr_mercy_bt","path":"sprites/spr_mercy_bt/spr_mercy_bt.yy",},},
+    {"id":{"name":"spr_minigameui","path":"sprites/spr_minigameui/spr_minigameui.yy",},},
     {"id":{"name":"spr_noelle_kneel_shocked","path":"sprites/spr_noelle_kneel_shocked/spr_noelle_kneel_shocked.yy",},},
     {"id":{"name":"spr_noelle_kneel","path":"sprites/spr_noelle_kneel/spr_noelle_kneel.yy",},},
     {"id":{"name":"spr_noelle_shocked_dw","path":"sprites/spr_noelle_shocked_dw/spr_noelle_shocked_dw.yy",},},
@@ -465,10 +469,10 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
+    {"roomId":{"name":"room_battle_debug","path":"rooms/room_battle_debug/room_battle_debug.yy",},},
     {"roomId":{"name":"room_firstroom","path":"rooms/room_firstroom/room_firstroom.yy",},},
     {"roomId":{"name":"PLACE_CHAPTER_SELECT","path":"rooms/PLACE_CHAPTER_SELECT/PLACE_CHAPTER_SELECT.yy",},},
     {"roomId":{"name":"room_sharpshooter","path":"rooms/room_sharpshooter/room_sharpshooter.yy",},},
-    {"roomId":{"name":"room_battle_debug","path":"rooms/room_battle_debug/room_battle_debug.yy",},},
     {"roomId":{"name":"room_rudebuster_test","path":"rooms/room_rudebuster_test/room_rudebuster_test.yy",},},
     {"roomId":{"name":"room_cutscene_test","path":"rooms/room_cutscene_test/room_cutscene_test.yy",},},
     {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},

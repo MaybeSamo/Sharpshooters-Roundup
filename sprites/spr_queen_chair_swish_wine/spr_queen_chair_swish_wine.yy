@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_queen_chair_swish_wine",
   "bboxMode":0,
   "bbox_bottom":81,
@@ -12,10 +12,10 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b41f1051-1b53-4e89-aa0d-70abca30ed51","name":"b41f1051-1b53-4e89-aa0d-70abca30ed51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"67f8ee96-fc43-43ce-b431-0e45f46dba2c","name":"67f8ee96-fc43-43ce-b431-0e45f46dba2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"fe2fc4a7-2a92-44cb-a88c-b14fad30bd75","name":"fe2fc4a7-2a92-44cb-a88c-b14fad30bd75","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7c60ddea-66c9-4675-aa0c-35ff0a8981fb","name":"7c60ddea-66c9-4675-aa0c-35ff0a8981fb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b41f1051-1b53-4e89-aa0d-70abca30ed51","name":"b41f1051-1b53-4e89-aa0d-70abca30ed51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"67f8ee96-fc43-43ce-b431-0e45f46dba2c","name":"67f8ee96-fc43-43ce-b431-0e45f46dba2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fe2fc4a7-2a92-44cb-a88c-b14fad30bd75","name":"fe2fc4a7-2a92-44cb-a88c-b14fad30bd75","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7c60ddea-66c9-4675-aa0c-35ff0a8981fb","name":"7c60ddea-66c9-4675-aa0c-35ff0a8981fb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -73,18 +73,10 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b41f1051-1b53-4e89-aa0d-70abca30ed51","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1c4ed2d9-fc8b-4703-ac2f-2f2b822cb7c4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"67f8ee96-fc43-43ce-b431-0e45f46dba2c","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3d3793db-94f8-4cab-8b56-39c869eced20","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe2fc4a7-2a92-44cb-a88c-b14fad30bd75","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ab3f8be8-e3e2-493e-914f-aeb4d797a774","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7c60ddea-66c9-4675-aa0c-35ff0a8981fb","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0141dd4d-0b40-40bf-ad91-20d4332dd756","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b41f1051-1b53-4e89-aa0d-70abca30ed51","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1c4ed2d9-fc8b-4703-ac2f-2f2b822cb7c4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"67f8ee96-fc43-43ce-b431-0e45f46dba2c","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3d3793db-94f8-4cab-8b56-39c869eced20","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe2fc4a7-2a92-44cb-a88c-b14fad30bd75","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ab3f8be8-e3e2-493e-914f-aeb4d797a774","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7c60ddea-66c9-4675-aa0c-35ff0a8981fb","path":"sprites/spr_queen_chair_swish_wine/spr_queen_chair_swish_wine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0141dd4d-0b40-40bf-ad91-20d4332dd756","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
